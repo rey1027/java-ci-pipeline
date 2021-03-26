@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<project name="java-ci-pipeline" default="todo">
+
+	<target name="todo" depends="empaqueta">
+   </target>
+
+	<target name="empaqueta" depends="compila">
+      <jar destfile="../jar/archivo_calculadora.jar" />
+   </target>
+
+	<target name="compila">
+      <javac srcdir="." />
+   </target>
+
+</project>
